@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>No Borders</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" href="image/icone.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="custom-header">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+            <a href="../index.html" class="d-flex align-items-center text-decoration-none logo">
+                <img src="image/icone.png" alt="Ícone do site" class="logo-img me-2">
+                <span class="logo-text">No Borders</span>
+            </a>
+
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="page/dados.html" class="nav-link">Dados</a></li>
+                    <li class="nav-item"><a href="page/blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="page/contatos.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrosel de Imagens -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=0b5aa24c6c&attid=0.1&permmsgid=msg-f:1845969200079921696&th=199e333505136220&view=fimg&fur=ip&permmsgid=msg-f:1845969200079921696&sz=s0-l75-ft&attbid=ANGjdJ98gOtY0A5PnM4sjK7zIu8qorqVDbSvWIGW-iADDNfo-2yDIjUyjpZYH7rWuvCowDYFKe3DGhDP7O408m4pd1xr0APKvSFu5cir2IKkhhNDiaglQ6N1BdnB3Zg&disp=emb&realattid=ii_mgqohpx90&zw"
+                    class="d-block w-100" alt="Doação 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://mail.google.com/mail/u/0?ui=2&ik=0b5aa24c6c&attid=0.2&permmsgid=msg-f:1845969200079921696&th=199e333505136220&view=fimg&fur=ip&permmsgid=msg-f:1845969200079921696&sz=s0-l75-ft&attbid=ANGjdJ8G6FjhPIAgjwBaSNsqfGQhh4apzaZ2jGa5Sj9h0eaQL9qTYYt7nCX31mZNU6Xxl3uw_FHfsnTCbtUtwPKfIDE8Am_pwkNcGQ4_gbK615QkyaRBivy1w9_uIgU&disp=emb&realattid=ii_mgqohtgq1&zw"
+                    class="d-block w-100" alt="Doação 2">
+            </div>
+            <div class="carousel-item">
+                <img src="image/sim 0.2.png" class="d-block w-100" alt="Doação 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <div class="ratio ratio-16x9">
+                    <video src="image/1000234145.mp4" controls autoplay muted playsinline loop></video>
+
+                </div>
+
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"> O que nós somos?</h1>
+                <p class="lead">O projeto "No Borders" foi desenvolvidos por alunos do 9° ano do colégio Donaduzzi, com
+                    a orientação de professores. Nosso objetivo com a campanha é a arrecadação de roupas,
+                    eletrodomésticos e recicláveis para doação aos refugiados imigrantes da Embaixada Solidária de
+                    Toledo.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Tradutor --> 
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "it", "es", "de", "ja", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_open_direction": "top", "flag_style": "3d", "alt_flags": { "en": "usa", "pt": "brazil" }, "switcher_text_color": "#f7f7f7", "switcher_arrow_color": "#f2f2f2", "switcher_border_color": "#161616", "switcher_background_color": "#303030", "switcher_background_shadow_color": "#474747", "switcher_background_hover_color": "#3a3a3a", "dropdown_text_color": "#eaeaea", "dropdown_hover_color": "#748393", "dropdown_background_color": "#474747" }</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
+
+
+    <!-- Rodapé Moderno -->
+    <footer class="custom-footer mt-5">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-4">
+            <div class="d-flex align-items-center mb-3 mb-md-0">
+                <img src="image/icone.png" alt="Logo" class="footer-logo me-2">
+                <span class="text-footer">© 2025 Company, Inc</span>
+            </div>
+
+            <ul class="nav list-unstyled d-flex mb-0">
+                <li class="ms-3">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</html>

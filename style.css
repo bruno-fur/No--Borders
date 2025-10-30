@@ -1,0 +1,399 @@
+.carousel-item {
+  height: 70vh;
+  min-height: 400px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.featurette {
+  padding: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 50vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Estilo do mapa */
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Ajuste de layout opcional */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.featurette-heading {
+  font-size: 2rem;
+}
+
+.lead {
+  color: #555;
+}
+
+body {
+  background: #f8f9fa;
+}
+
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-menu {
+  min-width: 180px;
+}
+
+/* ===== Cabeçalho Moderno ===== */
+.custom-header {
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease-in-out;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.custom-header:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Logo */
+.logo-img {
+  width: 45px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Navegação */
+.nav-link {
+  color: #f1f1f1;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: #fff !important;
+  color: #0d6efd !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .custom-header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===== Rodapé Moderno ===== */
+.custom-footer {
+  background: linear-gradient(90deg, #6610f2, #0d6efd);
+  color: #fff;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+}
+
+.custom-footer:hover {
+  box-shadow: 0 -6px 25px rgba(0, 0, 0, 0.25);
+}
+
+.footer-logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.text-footer {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.social-icon {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #fff;
+  transform: translateY(-3px) scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .custom-footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .custom-footer ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+}
+
+
+.contato-container {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 3px solid #0d6efd;
+  }
+
+  .contato-container h2 {
+    color: #0d6efd;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .contato-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .contato-icone {
+    width: 24px;
+    height: 24px;
+    filter: invert(35%) sepia(85%) saturate(500%) hue-rotate(190deg);
+  }
+
+  .contato-item a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+
+  .contato-item a:hover {
+    color: #0d6efd;
+  }
+
+  @media (max-width: 600px) {
+    .contato-container {
+      padding: 30px 10px;
+    }
+    .contato-item a {
+      font-size: 1rem;
+    }
+  }
+
+/* ===== Combobox sofisticada ===== */
+.tab-select-wrapper {
+  max-width: 320px;
+  margin: 30px auto;
+  position: relative;
+}
+
+.tab-select {
+  width: 100%;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.4s ease;
+}
+
+.tab-select:hover {
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+}
+
+.tab-select:focus {
+  outline: none;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.35), 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Seta customizada */
+.tab-select-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* ===== Conteúdo dos gráficos ===== */
+.tab-contents {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 450px;
+  position: relative;
+}
+
+.tab-content {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  pointer-events: none;
+}
+
+.tab-content.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+/* Canvas responsivo */
+.tab-content canvas {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.4s ease;
+}
+
+/* Hover no canvas */
+.tab-content canvas:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tab-select-wrapper {
+    max-width: 90%;
+  }
+
+  .tab-content canvas {
+    max-height: 350px;
+  }
+}
+
+/* Container para os 3 gráficos em linha */
+.grafico1-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    min-height: 400px;
+}
+
+/* Estilo individual para cada canvas do gráfico1 */
+.grafico1-container canvas {
+    width: 200px !important;
+    height: 200px !important;
+    max-width: 30%;
+    flex: 1;
+    min-width: 180px;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+    .grafico1-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .grafico1-container canvas {
+        max-width: 80%;
+        width: 250px !important;
+        height: 250px !important;
+    }
+}
+
+
+
+
+
+

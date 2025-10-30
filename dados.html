@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NO BORDERS - Dados</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- Favicon e CSS próprio -->
+    <link rel="icon" href="../image/icone.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="custom-header">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+            <a href="../index.html" class="d-flex align-items-center text-decoration-none logo">
+                <img src="../image/icone.png" alt="Ícone do site" class="logo-img me-2">
+                <span class="logo-text">No Borders</span>
+            </a>
+
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="dados.html" class="nav-link active">Dados</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contatos.html" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    </div>
+
+    <!-- Conteúdo com Mapa -->
+    <div class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="featurette-heading fw-normal lh-1 mb-3">
+                    Mapa Interativo <span class="text-body-secondary">
+                    </span>
+                </h2>
+                <p class="lead mb-4">Fluxo Migratório Brasileiro</p>
+            </div>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_mjzEY0mL88R9BQeYrMa7FihbS68L5M&ehbc=2E312F"
+                    style="border: 0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="grafico-tabs">
+        <div class="tab-select-wrapper">
+            <select id="grafico-select" class="tab-select">
+                <option value="0" selected>Imigrantes por País</option>
+                <option value="1">Gráfico 2</option>
+                <option value="2">Gráfico 3</option>
+                <option value="3">Gráfico 4</option>
+                <option value="4">Gráfico 5</option>
+            </select>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="../script.js"></script>
+
+        <div class="tab-contents">
+            <div class="tab-content active">
+                <canvas id="grafico0"></canvas>
+            </div>
+            <div class="tab-content">
+                <!-- Mudei o ID do container para evitar conflito -->
+                <div class="grafico1-container">
+                    <canvas id="grafico1_canvas1"></canvas>
+                    <canvas id="grafico1_canvas2"></canvas>
+                    <canvas id="grafico1_canvas3"></canvas>
+                </div>
+            </div>
+            <div class="tab-content">
+                <canvas id="grafico2"></canvas>
+            </div>
+            <div class="tab-content">
+                <canvas id="grafico3"></canvas>
+            </div>
+            <div class="tab-content">
+                <canvas id="grafico4"></canvas>
+            </div>
+        </div>
+
+        <!-- Tradutor -->
+        <div class="gtranslate_wrapper"></div>
+        <script>window.gtranslateSettings = { "default_language": "pt", "native_language_names": true, "detect_browser_language": true, "languages": ["pt", "it", "es", "de", "ja", "en"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "switcher_open_direction": "top", "flag_style": "3d", "alt_flags": { "en": "usa", "pt": "brazil" }, "switcher_text_color": "#f7f7f7", "switcher_arrow_color": "#f2f2f2", "switcher_border_color": "#161616", "switcher_background_color": "#303030", "switcher_background_shadow_color": "#474747", "switcher_background_hover_color": "#3a3a3a", "dropdown_text_color": "#eaeaea", "dropdown_hover_color": "#748393", "dropdown_background_color": "#474747" }</script>
+        <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
+
+        <!-- Rodapé Moderno -->
+        <footer class="custom-footer mt-5">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center py-4">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <img src="../image/icone.png" alt="Logo" class="footer-logo me-2">
+                    <span class="text-footer">© 2025 Company, Inc</span>
+                </div>
+
+                <ul class="nav list-unstyled d-flex mb-0">
+                    <li class="ms-3">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+
+</html>
