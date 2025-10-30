@@ -5,6 +5,45 @@
   box-sizing: border-box;
 }
 
+/* Navegação */
+.nav-link {
+  color: #f1f1f1;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: #fff !important;
+  color: #0d6efd !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .custom-header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+}
+
 body {
   background: #f8f9fa;
   font-family: "Inter", Arial, sans-serif;
